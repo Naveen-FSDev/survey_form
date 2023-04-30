@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label for="name"><b>Name:<span style="color:red">*</span> </b></label> </br>
+        <input type="text" placeholder="First">
+        <input type="text" placeholder="last"> </br>
+        <label for="email"><b>Email:<span style="color:red">*</span> </b></label> </br>
+        <input type="text" placeholder="Email"> </br>
+        <label for="star"><b>Your Experience: <span style="color:red">*</span></b></label> </br> 
+        
+        <span onclick="processRating(this)" id="star-1" data-index="1" data-status="0">&#x2B50</span>
+        <span onclick="processRating(this)" id="star-2" data-index="2" data-status="0">&#x2B50</span>
+        <span onclick="processRating(this)" id="star-3" data-index="3" data-status="0">&#x2B50</span>
+        <span onclick="processRating(this)" id="star-4" data-index="4" data-status="0">&#x2B50</span>
+        <span onclick="processRating(this)" id="star-5" data-index="5" data-status="0">&#x2B50</span> </br>
+        <p>Overall, how would you rate you experience with us?</p> </br>
+        <p><b>How satisfied are you with<span style="color:red">*</span></b></p> </b>
+        <label>Purchase</label> 
+        <input type="radio" name="res1">Very Unsatisfied
+        <input type="radio" name="res1">Unsatisfied
+        <input type="radio" name="res1">Neutral
+        <input type="radio" name="res1">Satisfied
+        <input type="radio" name="res1">Very Satisfied </br>
+        <label>Service</label> 
+        <input type="radio" name="res1">Very Unsatisfied
+        <input type="radio" name="res1">Unsatisfied
+        <input type="radio" name="res1">Neutral
+        <input type="radio" name="res1">Satisfied
+        <input type="radio" name="res1">Very Satisfied </br>
+        <label>Company Overall</label> 
+        <input type="radio" name="res1">Very Unsatisfied
+        <input type="radio" name="res1">Unsatisfied
+        <input type="radio" name="res1">Neutral
+        <input type="radio" name="res1">Satisfied
+        <input type="radio" name="res1">Very Satisfied </br> </br>
+        <label><b>How likely are you to:<span style="color:red">*</span></b></label> </br>
+        <label>Buy From us again</label> 
+        <input type="radio" name="res1">Very Unlikely
+        <input type="radio" name="res1">Unlikely
+        <input type="radio" name="res1">Neutral
+        <input type="radio" name="res1">Likely
+        <input type="radio" name="res1">Very Likely </br>
+        <label>Recommend our product to others</label> 
+        <input type="radio" name="res1">Very Unlikely
+        <input type="radio" name="res1">Unlikely
+        <input type="radio" name="res1">Neutral
+        <input type="radio" name="res1">Likely
+        <input type="radio" name="res1">Very Likely </br>
+        <label>Recommend our company to others</label> 
+        <input type="radio" name="res1">Very Unlikely
+        <input type="radio" name="res1">Unlikely
+        <input type="radio" name="res1">Neutral
+        <input type="radio" name="res1">Satisfied
+        <input type="radio" name="res1">Very Likely </br> </br>
+        <p><b>Addditional Comments and Suggestions:<span style="color:red">*</span></b></p></br>
+        <textarea name="comment" cols="45" rows="5" placeholder="My Comments"></textarea> </br>
+        <p><input type="submit"></p>
+    
+
+
+
+    </div>
+    
+    <style>
+        div{
+            width: 50rem;
+            height:45rem;
+            background-color: aquamarine;
+            padding: 10px;
+        }
+
+        .rating span{
+            font-size: 25px;
+            cursor: pointer;
+            color:antiquewhite;
+        }
+
+        .rating span-active {
+            color:yellowgreen;
+        }
+        #displayRateing{
+            font-size: large;
+            margin: 10px;
+            color:aqua
+        }
+
+        
+
+    </style>
+</body>
+</html>
